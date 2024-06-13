@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Merriweather";
+
+}
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin: 2px 2px;
+    text-align: center;
+}
+h1{
+    margin: 30px;
+}
+
+header {
+    background-color: #032e937b;
+    color: rgb(163, 53, 53);
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    margin: 2em;
+    width: 80%;
+}
+
+fieldset {
+    border: 1px solid #032e937b;
+    background-color: #91cff18a;
+    color: white;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+legend {
+    background-color: #032e937b;
+    text-align: center;
+    border-radius: 8px; /* Tùy chọn, tạo góc bo tròn */
+    border: 2px solid #000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer; /* Biến con trỏ thành bàn tay khi di chuột vào label */
+}
+
+footer {
+    background-color: #032d93;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.checkbox-group img {
+    width: 70px; /* Điều chỉnh kích thước ảnh */
+    height: 70px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f0f0; /* Màu nền bên trong container */
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid #000; /* Thêm viền cho ảnh */
+    border-radius: 8px; /* Tùy chọn, tạo góc bo tròn */
+}
+.checkbox-group input[type="checkbox"]:checked + .image-container {
+    border-color: #4CAF50; /* Tạo hiệu ứng khi checkbox được chọn */
+}
+.checkbox-group input[type="checkbox"]:checked + .image-container::before {
+    background-color: #4CAF50; /* Màu nền của checkbox khi được chọn */
+    border-color: #4CAF50; /* Màu viền của checkbox khi được chọn */
+}
+html{
+    background: url("https://i.pinimg.com/736x/5f/5f/76/5f5f76ff3724b5890afaafb978ae856d.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
