@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="image/logo.png">    
     <title>HCMUT _ Clash of Clans</title>
     <link rel="stylesheet" href="styles.css"> <!-- Đường dẫn đến tệp CSS của bạn -->
+    <script src="script.js"></script> <!-- Đường dẫn đến tệp JavaScript của bạn -->
+
 </head>
 <body>
     <header>
@@ -15,7 +17,7 @@
 
     <main>
         <div class="top-left" id ="logo">
-            <img src="image/logo.png" width="70" height="70"><br>
+            <img src="https://api-assets.clashofclans.com/badges/512/tyi3_VOLBF5vegIwfDWW-ilztFjvy_igu4r4u0mqks0.png" width="70" height="70"><br>
             HCMUT<br>
             #2RGG0VYR8
         </div>
@@ -28,13 +30,55 @@
                     <label>
                         <img src="image/Babarian_King/Avatar_Hero_Barbarian_King.png" width="70" height="100">
                     </label>
-                    <label>
-                        <input type="checkbox" name="checkboxGroup1" value="checkbox1_1">
-                        <img src="image/Babarian_King/Giant_Gauntlet.png" width="70" height="70">
+                    <label for="Eitem">
+                        <input type="checkbox" name="checkboxGroup1" value="checkbox1_1" id = "Eitem">
+                        <img src="image/Babarian_King/Giant_Gauntlet.png" width="70" height="70" onclick="toggleOptions()">
+                        <select id="numberOptions" onchange="displaySelectedNumber()">
+                            <option value="" disabled selected>Lvl:</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">10</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                        </select>
                     </label>
                     <label>
                         <input type="checkbox" name="checkboxGroup1" value="checkbox1_2">
                         <img src="image/Babarian_King/Spiky_Ball.png" width="70" height="70">
+                        <select id="numberOptions" onchange="displaySelectedNumber()">
+                            <option value="" disabled selected>Lvl:</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">10</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                        </select>
                     </label>
                     <label>
                         <input type="checkbox" name="checkboxGroup1" value="checkbox1_3">
@@ -116,7 +160,7 @@
                     <label>
                         <input type="checkbox" name="checkboxGroup4" value="checkbox4_1">
                         <img src="image/Royal_Champion/Rocket_Spear.png" width="70" height="70">
-                    </label>
+                    </label>    
                     <label>
                         <input type="checkbox" name="checkboxGroup4" value="checkbox4_2">
                         <img src="image/Royal_Champion/Haste_Vial.png" width="70" height="70">
@@ -140,11 +184,8 @@
             </fieldset>
         </form>
     </main>
-
     <footer>
         <p>&copy; 2024 Ngô Minh Trí.</p>
     </footer>
-
-    <script src="script.js"></script> <!-- Đường dẫn đến tệp JavaScript của bạn -->
 </body>
 </html>
